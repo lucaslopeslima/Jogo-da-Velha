@@ -3,9 +3,13 @@ let board = ['','','','','','','','','']
 let playerTime = 0
 let symbols = ['o','x']
 let gameOver = false
+let veia = false
 
 function handleMove(position){
     if(gameOver){
+        return;
+    }
+    if(veia){
         return;
     }
     if (board[position] == ''){
@@ -16,10 +20,14 @@ function handleMove(position){
                 playerTime = 1
             }else{
                 playerTime = 0
-            }    
-        }
+            }
+              
+        } 
     }
+    veia = isVeia()  //verificar se deu veia
+    
     return gameOver
+    
     
 }
 function isWin(){
@@ -43,7 +51,18 @@ function isWin(){
             board[pos1] != ''){
             return true
         }
-        
     }
+
     return false
+}
+
+let counter = 9;
+function isVeia(){
+    if(counter > 0){
+        counter = counter - 1
+        console.log(counter)
+        return false
+    }
+    return true
+    
 }
