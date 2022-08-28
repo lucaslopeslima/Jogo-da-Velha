@@ -430,6 +430,10 @@ body {
 
 @-webkit-keyframes sumir {
   0% {
+    display: none;
+    opacity: 1;
+  }
+  1% {
     display: block;
     opacity: 1;
   }
@@ -438,13 +442,17 @@ body {
     opacity: 1;
   }
   100% {
-    opacity: 0;
     display: none;
+    opacity: 0;
   }
 }
 
 @keyframes sumir {
   0% {
+    display: none;
+    opacity: 1;
+  }
+  1% {
     display: block;
     opacity: 1;
   }
@@ -453,8 +461,8 @@ body {
     opacity: 1;
   }
   100% {
-    opacity: 0;
     display: none;
+    opacity: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

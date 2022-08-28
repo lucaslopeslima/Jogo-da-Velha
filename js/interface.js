@@ -61,6 +61,9 @@ function checkVeia(){
         console.log('deu veia')
         modal.classList.add('modal-active')
         reset()
+        setTimeout(()=>{
+            modal.classList.remove('modal-active')
+        }, 2000)
     }
 }
 function reset(){
