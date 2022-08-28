@@ -9,7 +9,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-image: url('../assets/img/background.jpg');
+    background-image: url('../assets/img/background.webp');
     animation: body 2s ease-in-out forwards;
 }
 @keyframes body{
@@ -124,7 +124,7 @@ h1{
             position: relative;
             width: 100%;
             height: 100%;
-            background-image: url('../assets/img/o2.jpg');
+            background-image: url('../assets/img/o2.webp');
             background-size: contain;
             &::after{
                 content: '';
@@ -142,7 +142,7 @@ h1{
             position: relative;
             width: 100%;
             height: 100%;
-            background-image: url('../assets/img/x2.jpg');
+            background-image: url('../assets/img/x2.webp');
             background-size: contain;
             &::after{
                 content: '';
@@ -283,7 +283,7 @@ h1{
         right: 0;
         left: 0;
         bottom: 0;
-        background-image: url('../assets/img/velha.jpg');
+        background-image: url('../assets/img/velha.webp');
         background-repeat: no-repeat;
         background-position: center;
     }
